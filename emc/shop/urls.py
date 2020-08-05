@@ -40,5 +40,5 @@ urlpatterns = [
     path("productdetails21/", views.productdetails21, name="ProductDetails21"),
     path("productdetails22/", views.productdetails22, name="ProductDetails22"),
     path("productdetails23/", views.productdetails23, name="ProductDetails23"),
-    path("cart/", views.cart, name="Cart")
+    path("productdetails24/", views.productdetails24, name="ProductDetails24")
 ]

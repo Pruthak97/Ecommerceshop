@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from .models import Products, Userlogin
+from django.shortcuts import render, get_object_or_404
+from .models import Products, PostImage
 
 
 # Create your views here.
@@ -54,7 +54,7 @@ def productdetails0(request):
     products = Products.objects.all()
     print(products)
     params = {'products': products}
-    return render(request, 'shop/productdetails0.html', params)
+    return render(request, 'shop/productdetail0.html', params)
 
 
 def productdetails1(request):
@@ -75,7 +75,7 @@ def productdetails3(request):
     products = Products.objects.all()
     print(products)
     params = {'products': products}
-    return render(request, 'shop/productdetails.html3', params)
+    return render(request, 'shop/productdetails3.html', params)
 
 
 def productdetails4(request):
@@ -152,7 +152,7 @@ def productdetails14(request):
     products = Products.objects.all()
     print(products)
     params = {'products': products}
-    return render(request, 'shop/productdetails.html14', params)
+    return render(request, 'shop/productdetails14.html', params)
 
 
 def productdetails15(request):
@@ -218,6 +218,13 @@ def productdetails23(request):
     return render(request, 'shop/productdetails23.html', params)
 
 
+def productdetails24(request):
+    products = Products.objects.all()
+    print(products)
+    params = {'products': products}
+    return render(request, 'shop/productdetails24.html', params)
+
+
 def ultracartridges(request):
     products = Products.objects.all()
     print(products)
@@ -239,12 +246,3 @@ def neocartridges(request):
     return render(request, 'shop/NEO Cartridges.html', params)
 
 
-def cart(request):
-    return render(request, 'shop/cart.html')
-
-
-def signin(request):
-    user = Userlogin.objects.all()
-    print(user)
-    params = {'users': user}
-    return render(request, 'shop/signin.html', params)
