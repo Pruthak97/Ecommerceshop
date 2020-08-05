@@ -11,16 +11,16 @@ class Products(models.Model):
     Price = models.IntegerField(default=0)
     desc = models.CharField(max_length=1000)
     pub_date = models.DateField()
-    image = models.ImageField(upload_to="shop/img", default="")
+    image = models.FileField(blank=True)
 
     def __str__(self):
         return self.product_name
 
 
-class Userlogin(models.Model):
+class PostImage(models.Model):
     objects = models.Manager()
-    user_name = models.AutoField
-    password = models.CharField(max_length=50)
+    post = models.ForeignKey(Products, default=None, on_delete=models.CASCADE)
+    images = models.FileField(upload_to='shop/img')
 
     def __str__(self):
-        return self.user_name
+        return self.post.product_name
