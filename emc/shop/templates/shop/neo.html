@@ -1,0 +1,342 @@
+{% load static %}
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Vaariya Beverages</title>
+
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" content="Porto - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600,700" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="{% static 'shop/vendor/bootstrap/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/vendor/fontawesome-free/css/all.min.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/vendor/animate/animate.min.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/vendor/simple-line-icons/css/simple-line-icons.min.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/vendor/owl.carousel/assets/owl.carousel.min.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/vendor/owl.carousel/assets/owl.theme.default.min.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/vendor/magnific-popup/magnific-popup.min.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/vendor/bootstrap-star-rating/css/star-rating.min.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/vendor/bootstrap-star-rating/themes/krajee-fas/theme.min.css' %}">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="{% static 'shop/css/theme.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/css/theme-elements.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/css/theme-blog.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/css/theme-shop.css' %}">
+
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="{% static 'shop/vendor/rs-plugin/css/settings.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/vendor/rs-plugin/css/layers.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/vendor/rs-plugin/css/navigation.css' %}">
+
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="{% static 'shop/css/demos/demo-product-landing.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/css/demos/demo-insurance.css' %}">
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="{% static 'shop/css/skins/skin-product-landing.css' %}">
+        <link rel="stylesheet" href="{% static 'shop/css/skins/skin-insurance.css' %}">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="{% static 'shop/css/custom.css' %}">
+
+		<!-- Head Libs -->
+		<script src="{% static 'shop/vendor/modernizr/modernizr.min.js' %}"></script>
+
+	</head>
+	<body data-target="#header" data-spy="scroll" data-offset="100">
+
+		<div class="body">
+			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body">
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-logo">
+										<a href="{% url 'HomePage' %}">
+											<img alt="Vaariya Beverages" width="150" height="60" src="{% static 'shop/img/logo.png' %}">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header-column w-100 pl-lg-5">
+								<div class="header-nav w-100 p-0">
+									<div class="header-nav header-nav-links justify-content-start w-100">
+										<div class="header-nav-main header-nav-main-arrows header-nav-main-effect-2 header-nav-main-sub-effect-1 w-100">
+											<nav class="collapse w-100">
+												<ul class="nav nav-pills flex-column flex-lg-row w-100" id="mainNav">
+													<li class="dropdown">
+														<a class="dropdown-item active" href="{% url 'HomePage' %}">Home</a>
+													</li>
+													<li class="dropdown">
+														<a class="dropdown-item" href="{% url 'AboutUs' %}">About Us</a>
+													</li>
+													<li class="dropdown">
+														<a class="dropdown-item" href="{% url 'ProductView' %}">Products</a>
+													</li>
+													<li class="dropdown">
+														<a class="dropdown-item" href="{% url 'ContactUs' %}">Contact us</a>
+													</li>
+
+
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="header-column flex-row w-auto">
+								<button class="btn header-btn-collapse-nav ml-3" data-toggle="collapse" data-target=".header-nav-main nav">
+									<i class="fas fa-bars"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main shop py-4">
+
+				<div class="container">
+				<div class="overflow-hidden mb-2">
+					<h1 class="mb-0 font-weight-bold text-7">NEO Filters</h1>
+								</div>
+					<div class="masonry-loader masonry-loader-showing">
+						<div class="row products product-thumb-info-list" data-plugin-masonry data-plugin-options="{'layoutMode': 'fitRows'}">
+							<div class="col-12 col-sm-6 col-lg-3 product">
+
+								<span class="product-thumb-info border-0">
+
+									<a href="{% url 'ProductDetails5' %}">
+										<span class="product-thumb-info-image">
+											<img alt="" class="img-fluid" src='/media/{{products.5.image}}'>
+										</span>
+									</a>
+									<span class="product-thumb-info-content product-thumb-info-content pl-0 bg-color-light">
+										<a href="{% url 'ProductDetails5' %}">
+											<h4 class="text-4 text-primary">{{products.5.products_name}}</h4>
+											<h4 class="text-4 text-primary">{{products.5.category}}</h4>
+                                            <h4 class="text-4 text-primary">{{products.5.subcategory}}</h4>
+											<span class="price">
+												<span class="amount text-dark font-weight-semibold"></span>
+											</span>
+										</a>
+									</span>
+								</span>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-3 product">
+
+								<span class="product-thumb-info border-0">
+
+									<a href="{% url 'ProductDetails6' %}">
+										<span class="product-thumb-info-image">
+											<img alt="" class="img-fluid" src='/media/{{products.6.image}}'>
+										</span>
+									</a>
+									<span class="product-thumb-info-content product-thumb-info-content pl-0 bg-color-light">
+										<a href="{% url 'ProductDetails6' %}">
+											<h4 class="text-4 text-primary">{{products.6.products_name}}</h4>
+											<h4 class="text-4 text-primary">{{products.6.category}}</h4>
+                                            <h4 class="text-4 text-primary">{{products.6.subcategory}}</h4>
+											<span class="price">
+												<span class="amount text-dark font-weight-semibold"></span>
+											</span>
+										</a>
+									</span>
+								</span>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-3 product">
+
+								<span class="product-thumb-info border-0">
+
+									<a href="{% url 'ProductDetails7' %}">
+										<span class="product-thumb-info-image">
+											<img alt="" class="img-fluid" src='/media/{{products.7.image}}'>
+										</span>
+									</a>
+									<span class="product-thumb-info-content product-thumb-info-content pl-0 bg-color-light">
+										<a href="{% url 'ProductDetails7' %}">
+											<h4 class="text-4 text-primary">{{products.7.products_name}}</h4>
+											<h4 class="text-4 text-primary">{{products.7.category}}</h4>
+                                            <h4 class="text-4 text-primary">{{products.7.subcategory}}</h4>
+											<span class="price">
+												<span class="amount text-dark font-weight-semibold"></span>
+											</span>
+										</a>
+									</span>
+								</span>
+							</div>
+
+							<div class="col-12 col-sm-6 col-lg-3 product">
+
+								<span class="product-thumb-info border-0">
+
+									<a href="{% url 'ProductDetails24' %}">
+										<span class="product-thumb-info-image">
+											<img alt="" class="img-fluid" src='/media/{{products.24.image}}'>
+										</span>
+									</a>
+									<span class="product-thumb-info-content product-thumb-info-content pl-0 bg-color-light">
+										<a href="{% url 'ProductDetails24' %}">
+											<h4 class="text-4 text-primary">{{products.24.products_name}}</h4>
+											<h4 class="text-4 text-primary">{{products.24.category}}</h4>
+                                            <h4 class="text-4 text-primary">{{products.24.subcategory}}</h4>
+											<span class="price">
+												<span class="amount text-dark font-weight-semibold"></span>
+											</span>
+										</a>
+									</span>
+								</span>
+							</div>
+				</div>
+					</div>
+			</div>
+
+				<div style="text-align: center">
+					<img src="{% static 'shop/img/certyfikaty.png' %}" alt="" align="center" style="width: 500px;height: 80px">
+				</div>
+
+				<div class="row">
+						<div class="col">
+							<div class="cd-product-viewer-wrapper" data-frame="16" data-friction="0.33">
+							   	<div>
+							      	<figure class="product-viewer appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+							        	<iframe width="1100" height="500" src="https://www.youtube.com/embed/vs5XErOhESg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				                       </figure>
+							   	</div>
+							</div>
+						</div>
+					</div>
+
+			</div>
+
+			<footer id="footer" class="footer-reveal custom-bg-color-1 footer-reveal border-top-0 m-0">
+				<div class="container">
+					<div class="row pt-5 pb-4">
+						<div class="col-lg-5">
+							<h2 class="custom-primary-font text-color-light custom-fontsize-6 mb-3">ABOUT US</h2>
+							<p class="pr-5">Vaariya is a company of water. Establish in 2018 it’s an Indian company based at Ahmadabad. We are the first company in the world, which provides the best alkaline water at lowest cost to ensure and provide best for your body and mind fit & healthy.We provide superior products, state of the art technology with innovative design with the assurance of world-class service.</p>
+						</div>
+						<div class="col-md-4 col-lg-2">
+							<h2 class="custom-primary-font text-color-light custom-fontsize-6 mb-3">QUICK LINKS</h2>
+							<ul class="list list-unstyled">
+								<li>
+									<a href="{% url 'HomePage' %}">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="{% url 'AboutUs' %}">
+										About Us
+									</a>
+								</li>
+								<li>
+									<a href="{% url 'ProductView' %}">
+										Products
+									</a>
+								</li>
+								<li>
+									<a href="{% url 'ContactUs' %}">
+										Contact us
+									</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-md-4 col-lg-3">
+							<h2 class="custom-primary-font text-color-light custom-fontsize-6 mb-3">CONTACT US</h2>
+							<p>Sakar-9, B-706, Old Reserve Bank of India<br> Ashram Road, Navranpura, Ahmedabad, Gujarat - 380009</p>
+							<span class="d-block text-color-light custom-fontsize-5 mb-2">Call: <a href="tel:+91-8320508425" class="text-decoration-none text-color-light custom-fontsize-5">+91-8320508425</a></span>
+							<span class="d-block text-color-light custom-fontsize-5">Email: <a href="info@vaariya.com" class="text-decoration-none text-color-light custom-fontsize-5">info@vaariya.com</a></span>
+							<ul class="header-social-icons social-icons d-none d-sm-block ml-1 mt-4">
+								<li class="social-icons-facebook"><a href="https://www.facebook.com/gullfoss.india/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+								<li class="social-icons-instagram"><a href="https://www.instagram.com/mehta.rikesh/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+								<li class="social-icons-linkedin"><a href="https://www.linkedin.com/in/vaariya-beverage-4051b41b3/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright custom-bg-color-1 border-top-0 mt-0">
+					<div class="container">
+						<hr class="solid opacity-1 mb-0">
+						<div class="row">
+							<div class="col mt-4 mb-4">
+								<p class="text-center text-2 mb-0">© Copyright 2020. All Rights Reserved.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Vendor -->
+		<script src="{% static 'shop/vendor/jquery/jquery.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/jquery.appear/jquery.appear.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/jquery.cookie/jquery.cookie.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/popper/umd/popper.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/common/common.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/jquery.validation/jquery.validate.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/jquery.gmap/jquery.gmap.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/jquery.lazyload/jquery.lazyload.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/isotope/jquery.isotope.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/vide/jquery.vide.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/vivus/vivus.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/bootstrap-star-rating/js/star-rating.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/bootstrap-star-rating/themes/krajee-fas/theme.min.js' %}"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="{% static 'shop/js/theme.js' %}"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="{% static 'shop/vendor/rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script>
+		<script src="{% static 'shop/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+		<!-- Demo -->
+		<script src="{% static 'shop/js/demos/demo-product-landing.js' %}"></script>
+		<script src="{% static 'shop/js/demos/demo-insurance.js' %}"></script>
+
+		<!-- Theme Custom -->
+		<script src="{% static 'shop/js/custom.js' %}"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="{% static 'shop/js/theme.init.js' %}"></script>
+
+		<!-- Examples -->
+		<script src="{% static 'shop/js/examples/examples.image360.js' %}"></script>
+
+		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-12345678-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		 -->
+
+
+	</body>
+</html>
